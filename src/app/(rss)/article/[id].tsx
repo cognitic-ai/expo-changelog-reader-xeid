@@ -11,7 +11,7 @@ import { useLocalSearchParams, useRouter } from "expo-router";
 import { Stack } from "expo-router/stack";
 import * as WebBrowser from "expo-web-browser";
 import * as AC from "@bacons/apple-colors";
-import { rssService, RSSItem, RSSFeed } from "../../services/rss-service";
+import { rssService, RSSItem, RSSFeed } from "../../../services/rss-service";
 
 const EXPO_CHANGELOG_RSS_URL = "https://expo.dev/changelog/rss.xml";
 

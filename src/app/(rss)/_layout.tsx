@@ -32,6 +32,22 @@ const AppleStackPreset: NativeStackNavigationOptions =
         headerBackButtonDisplayMode: "default",
       };
 
-export default function ArticleLayout() {
-  return <Stack screenOptions={AppleStackPreset} />;
+export default function RSSLayout() {
+  return (
+    <Stack screenOptions={AppleStackPreset}>
+      <Stack.Screen
+        name="index"
+        options={{
+          headerShown: false // Hide header for the main RSS feed since tabs handle the title
+        }}
+      />
+      <Stack.Screen
+        name="article/[id]"
+        options={{
+          title: "Article",
+          headerShown: true
+        }}
+      />
+    </Stack>
+  );
 }

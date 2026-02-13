@@ -41,7 +41,7 @@ function WebTabsLayout() {
       }}
     >
       <WebTabs.Screen
-        name="index"
+        name="(rss)"
         options={{
           title: "RSS Feed",
           tabBarIcon: (props) => <MaterialIcons {...props} name="rss-feed" />,
@@ -61,7 +61,7 @@ function WebTabsLayout() {
 function NativeTabsLayout() {
   return (
     <NativeTabs>
-      <NativeTabs.Trigger name="index">
+      <NativeTabs.Trigger name="(rss)">
         <NativeTabs.Trigger.Label>RSS Feed</NativeTabs.Trigger.Label>
         <NativeTabs.Trigger.Icon
           {...Platform.select({
